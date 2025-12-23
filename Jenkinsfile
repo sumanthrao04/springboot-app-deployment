@@ -19,7 +19,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main',
+        git branch: 'master',
             changelog: false,
             poll: false,
             url: YOUR_GIT_REPO_URL
