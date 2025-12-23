@@ -8,11 +8,10 @@ pipeline {
   environment {
     IMAGE_NAME = 'springboot-app-deployment'
     IMAGE_TAG  = "${env.BUILD_NUMBER}"
-    YOUR_GIT_REPO_URL=''
+    YOUR_GIT_REPO_URL='https://github.com/sumanthrao04/springboot-app-deployment.git'
   }
 
   tools {
-    jdk 'jdk-17'
     maven 'maven-3.9'
   }
 
